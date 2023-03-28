@@ -10,13 +10,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stopLoss = $orderPrice - ($reward / 2);
     }
 
-    elseif ($orderType == 'Sell') 
+    elseif ($orderType == 'sell') 
     {
         $reward = $orderPrice - $takeProfit;
         $stopLoss = $orderPrice + ($reward / 2);
     }
 
     // Output the value so js can receive it
-    echo $stopLoss;
+    $formattedNumber = number_format($stopLoss, 2);
+    echo $formattedNumber;
 }
 

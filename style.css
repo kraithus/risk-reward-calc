@@ -35,3 +35,12 @@ body {
     background-color: violet;
     border-color: violet;
 }
+
+.btn-profit-calc {
+    background-color: green;
+    border-color: green;
+}
+
+.white-icon {
+    color: white;
+}
