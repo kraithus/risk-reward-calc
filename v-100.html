@@ -20,7 +20,7 @@
 </head>
 <body>
 	<div class="card">
-	  <div class="card-title">V100 Form</div>
+	  <div class="card-title">V100 S/L Calc</div>
 	  <form id="v100-form">
         <div class="form-group">
             <label for="order-type"><i class="lab la-jedi-order"></i> Order Type:</label>
@@ -68,7 +68,8 @@
 					type: 'POST',
 					data: { orderType: orderType, orderPrice: orderPrice, takeProfit: takeProfit },
 					success: function(response) {
-						$('#result').val(response);
+						var stopLossValue = JSON.parse(response).stopLoss;
+						$('#result').val(stopLossValue);
 					}
 				});
 			});

@@ -41,6 +41,11 @@ body {
     border-color: green;
 }
 
+.btn-risk-reward {
+    background-color: bisque;
+    border-color: #333;
+}
+
 .white-icon {
     color: white;
 }
